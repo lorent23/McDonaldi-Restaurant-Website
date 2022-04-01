@@ -1,0 +1,333 @@
+/*html and body*/ 
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+
+:root{
+   --peru:#cd9452;
+   --black:#222;
+   --white:#fff;
+   --light-black:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --dark-bg:rgba(0,0,0,.7);
+   --border:.1rem solid #aaa;
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: auto;
+  }
+
+*{
+   font-family: 'Dosis', sans-serif;
+}
+section {
+    background: white;
+    overflow: hidden;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    background: var(--peru);
+    color: var(--white);
+    font-size: 15px;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border-radius: 0;
+}
+/*
+h1,h2,h3,h4,h5 {
+    font-family: 'Dosis', sans-serif;
+    color: var(--white);
+    font-size: 100px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+
+
+
+
+
+/*=======Navbar==========
+=========================*/
+#header-section {
+    z-index: 1000;
+
+}
+.navbar-brand {
+    width: 50px;
+    height: auto;
+}
+
+#navbar-items a {
+    text-decoration:none;
+    color: rgb(121, 107, 3);
+}
+#navbar-items a:hover {
+    color: #f4c613;
+    transition: 0.5s
+}
+#search-btn{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#search-btn:hover {
+  background-color: #f4c613;
+  transition: 0.5s
+}
+
+/*Home*/
+
+#home {
+    background: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 140px;
+    margin-bottom: 140px
+}
+#home-image     
+  {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-image:url("images/home-slide-1.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+
+#home-overlay {
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#home-content {
+    width: 100%;
+    height: 100%;
+    display:table;
+}
+
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#home-heading-big h1{
+    font-family: 'Dosis', sans-serif;
+    color: var(--white);
+    font-weight: 100;
+    font-size: 100px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+
+#home-text-top-1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    color: var(--white);
+  }
+#home-text {
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+    color: var(--white);
+}
+#home-btn {
+    width: 170px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block
+}
+/*arrow down */
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 20px;
+    color: white;
+    font-size: 32px;
+    width: 32px;
+    text-align: center;
+    margin-left: -15px;
+    z-index: 1000;
+    line-height: 1;
+    justify-content: center;
+}
+
+#arrow-down:hover, 
+    arrow-down:focus {
+    color: yellow;
+}
+.heading-text {
+    font-size: 4rem;
+    color: var(--black);
+}
+
+/******************************************About******************************************/
+#left-side-about{
+    padding: 40px 40px 40px 80px;
+}
+#left-side-about img {
+    width: 600px;
+    float: left;
+}
+
+#right-side-about{
+    vertical-align: top;
+}
+
+#about-text h2 {
+    font-size: 40px;
+}
+
+#about-text p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 17px;
+}
+
+#icons-block-about{
+    margin-top: 30px;
+    margin-left: -2px;
+}
+#icons-block-about img {
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+
+}
+
+#icons-block-about .icons {
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    padding: 15px;
+}
+#icon1,#icon2,#icon3 {
+    background-color: rgba(102, 102, 102, 0.406);
+    border: 2px solid white;
+    min-width: 200px;
+}
+
+/***************************Food Section**************************************************/
+
+#food  
+  {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: none;
+    height: 70%;
+    background: url("../images/food-table.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
+.carousel-inner img {
+  margin: auto;
+}
+
+.carousel-inner h2 {
+  color: white;
+  padding-bottom: 32px;
+}
+
+/***************************Fiter Foods******************************************************************/
+/* Add padding BETWEEN each column */
+#filter-foods{
+  background-color: var(--white);
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  height: auto;
+  width: auto;
+}
+#filter-foods,
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background: url("../images/table-cloth.png");
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  height: auto;
+  width: auto;
+}
+
+.content h4 {
+  color:var(--white);
+}
+.content p {
+  color:var(--white);
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+#myBtnContainer .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: var(--black);
+  cursor: pointer;
+}
+
+#myBtnContainer .btn:hover {
+  background-color: var(--peru);
+  transition-duration: 0.2s;
+}
+
+#myBtnContainer .btn.active {
+  background-color: var(--peru);
+  color: white;
+}
