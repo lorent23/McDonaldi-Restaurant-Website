@@ -41,20 +41,3 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
-//Search Button 
-
-function search_anything() {
-    let input = document.getElementById('search-btn').value
-    input=input.toLowerCase();
-    let x = document.getElementsByClassName('content');
-      
-    for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display="none";
-        }
-        else {
-            x[i].style.display="list-item";                 
-        }
-    }
-}
